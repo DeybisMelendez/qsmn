@@ -6,7 +6,11 @@ onready var Question = $CenterContainer/Question
 
 func _ready():
 	Yes.connect("button_up", self, "yes_pressed")
+	No.connect("button_down", self, "no_pressed")
 	No.connect("mouse_entered", self, "mouse_entered_no")
+
+func no_pressed():
+	mouse_entered_no()
 
 func yes_pressed():
 	Yes.hide()
