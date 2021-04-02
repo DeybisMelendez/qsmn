@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://fonts/Roboto-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scenes/main/Main.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 20
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Question" type="Label" parent="CenterContainer"]
+margin_top = 181.0
+margin_right = 1024.0
+margin_bottom = 252.0
+custom_fonts/font = SubResource( 1 )
+text = "¿Quieres ser mi novi@?"
+align = 1
+valign = 1
+
+[node name="Yes" type="Button" parent="CenterContainer"]
+margin_left = 316.0
+margin_top = 272.0
+margin_right = 707.0
+margin_bottom = 335.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 2 )
+text = "¡Si! Me encantaría"
+
+[node name="No" type="Button" parent="CenterContainer"]
+margin_left = 475.0
+margin_top = 355.0
+margin_right = 548.0
+margin_bottom = 418.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 2 )
+text = "No"
