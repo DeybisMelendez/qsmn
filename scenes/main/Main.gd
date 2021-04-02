@@ -1,8 +1,8 @@
 extends Control
 
-onready var Yes = $CenterContainer/Yes
-onready var No = $CenterContainer/No
-onready var Question = $CenterContainer/Question
+onready var Yes = $Yes
+onready var No = $No
+onready var Question = $Question
 
 func _ready():
 	Yes.connect("button_up", self, "yes_pressed")
