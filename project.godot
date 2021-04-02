@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Quieres ser mi novia"
+config/name="qsmn"
 config/description="Template from https://github.com/DeybisMelendez/godot-template"
 run/main_scene="res://scenes/main/Main.tscn"
 config/icon="res://icon.png"
